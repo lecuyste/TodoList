@@ -1,8 +1,5 @@
-﻿using System;
-
-public class Class1
+﻿public class TodoItem
 {
-	public Class1()
-	{
-	}
+    public string Title { get; set; }
+    public bool IsDone { get; set; }
 }
