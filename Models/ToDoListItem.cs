@@ -9,9 +9,9 @@ namespace TodoList.Models
 
         public DateTime CreatedAt { get; set; }
 
-        [Required]
-        [MinLength(2, ErrorMessage = "Votre tâches doit contenir au moins 2 caractères")]
-        [MaxLength(200, ErrorMessage = "Votre tâches ne peut contenir plus de 200 caractères")]
+        [Required (ErrorMessage = "Veuillez renseigner une tâche")]
+        [MinLength(2, ErrorMessage = "Votre tâche doit contenir au moins 2 caractères")]
+        [MaxLength(200, ErrorMessage = "Votre tâche ne peut contenir plus de 200 caractères")]
         public string Title { get; set; }
 
         public bool IsDone { get; set; }

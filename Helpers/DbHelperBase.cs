@@ -1,4 +1,6 @@
-﻿namespace TodoList.Helpers
+﻿using System.Data.SqlClient;
+
+namespace TodoList.Helpers
 {
     public class DbHelperBase
     {

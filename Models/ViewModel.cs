@@ -15,7 +15,7 @@ namespace TodoList.ViewModels
             using (var db = DbHelper.GetConnection())
             {
                 this.EditableItem = new TodoListItem();
-                this.TodoItems = db.Query<TodoListItem>("SELECT * FROM TodoListItems ORDER BY AddDate DESC").ToList();
+                this.TodoItems = db.Query<TodoListItem>("SELECT * FROM TodoListItems ORDER BY CreatedAt DESC").ToList();
             }
         }
 
